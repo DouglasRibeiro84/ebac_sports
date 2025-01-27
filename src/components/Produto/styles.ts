@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 import { cores } from '../../styles'
 
+import { ButtonHTMLAttributes } from 'react'
+
 export const Produto = styled.div``
 
 export const Titulo = styled.h3`
@@ -60,7 +62,9 @@ export const Plataformas = styled.ul`
     font-weight: bold;
   }
 `
-export const BtnComprar = styled.button`
+export const BtnComprar = styled.button<
+  ButtonHTMLAttributes<HTMLButtonElement>
+>`
   display: block;
   width: 100%;
   background-image: linear-gradient(
